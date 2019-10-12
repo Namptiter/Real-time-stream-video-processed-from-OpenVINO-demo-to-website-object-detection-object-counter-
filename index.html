@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Video Streaming</title>
+    <script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  </head>
+  <body>
+    <h1>Video Streaming </h1>
+    <img id = 'img'>
+  </body>
+  	<script>
+		$(function(){
+			var socket = io('localhost:3000');
+			var img_tag = document.getElementById('img');
+			socket.on('get_img', function(img) {
+				data = "data:image/jpeg;base64,"+img
+				$("#img").attr("src",data);
+				console.log('Ok');
+			})
+		})
+	</script>
+</html>
