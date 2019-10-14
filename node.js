@@ -35,6 +35,7 @@ app.get('/', function(req, res){
         })
         socket.on('count',function(data) {
             console.log('object_counter; '+data)
+            socket.broadcast.emit('get_change',data)
             // var data = new db({object_counter:data})
             // data.save()
         })
