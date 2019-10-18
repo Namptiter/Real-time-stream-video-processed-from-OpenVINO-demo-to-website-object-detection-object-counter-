@@ -1,4 +1,4 @@
-# Real-time-stream-video-processed-from-OpenVINO-demo-to-website(object detection & object counter)
+# Real time stream video processed from OpenVINO demo to website(object detection & object counter)
 Using SocketIo to transfer each frame processed from OpenVINO to website realtime.
 In this demo, we are using object detection yolov3 async with IR(.bin, .xml) model, that was converted from yolov3 model(.weights).
 
@@ -21,7 +21,7 @@ $npm installl
 
 $node node.js 
 ### Run python script
-$python3 object_detection_demo_yolov3_async.py -d CPU -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so -m <.xml> -i<.mp4>
+$python3.7 object_detection_demo_yolov3_async.py -d CPU -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so -m <.xml> -i<.mp4>
 
 -m: path to your xml file
 
