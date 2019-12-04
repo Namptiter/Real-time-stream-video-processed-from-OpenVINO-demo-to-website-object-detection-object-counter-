@@ -15,14 +15,20 @@ Learn more about yolov3: https://pjreddie.com/darknet/
 ***IR model(.bin,.xml)
 ## To run:
 ### Setup OpenVINO environment
-$source /opt/intel/openvino/bin/setupvars.sh
+```bash
+$ source /opt/intel/openvino/bin/setupvars.sh
+```
 ### Run nodejs server
-$npm installl
-
-$node node.js 
+```bash
+$ npm installl
+```
+```bash
+$ node node.js 
+```
 ### Run python script
-$python3.7 object_detection_demo_yolov3_async.py -d CPU -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so -m <.xml> -i<.mp4>
-
+```bash
+$ python3.7 object_detection_demo_yolov3_async.py -d CPU -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so -m <.xml> -i<.mp4>
+```
 -m: path to your xml file
 
 -i: path to video
