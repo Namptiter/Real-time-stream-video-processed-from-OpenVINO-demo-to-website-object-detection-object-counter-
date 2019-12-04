@@ -20,7 +20,7 @@ $ source /opt/intel/openvino/bin/setupvars.sh
 ```
 ### Run nodejs server
 ```bash
-$ npm installl
+$ npm install
 ```
 ```bash
 $ node node.js 
